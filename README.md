@@ -42,9 +42,3 @@ Feel free to create a new branch, fork the project, create a new Issue or make a
 
 [Apache V2](https://choosealicense.com/licenses/apache-2.0/)
 
-## References 📙:
-	
-[1] <last_author_name>, <first_author_name>. <work_title>. XX/XX/XX.
-	
-[2] <work_title>, <author_name>. Avaliable in: <https://www.link.com>. Access in em XX/XX/XX.
-
