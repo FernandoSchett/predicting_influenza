@@ -25,6 +25,51 @@ This project analyzes data on suspected COVID-19 Influenza-Like Illness (ILI) ca
 
 ## Results 📈:
 
+The best prediction methods were the decision tree and MLP. Unsupervised methods did not perform well in creating groups of sick and healthy individuals.
+
+## SuperVised Models:
+
+<h4 align="center">Table 1 - Results comparison between methods. </h4>
+
+| Método                                         |   F1-Score (Avg)  |   Recall (Avg)   |
+|:----------------------------------------------:|:-------------------:|:------------------:|
+| **K-NN** (n=5)                                     |  0.7025 ± 0.0087    |  0.7392 ± 0.0116   |
+| **Árvore de Decisão** (max_depth=5, min_samples_leaf=10) |  0.7422 ± 0.0116    |  0.8359 ± 0.0259   |
+| **Class. Bayesiano**                               |  0.6655 ± 0.2047    |  0.7392 ± 0.2380   |
+| **Perceptron** (iter=200)                          |  0.5858 ± 0.2347    |  0.6998 ± 0.3720   |
+| **MLP (iter=300)**                                 |  0.7472 ± 0.0135    |  0.8258 ± 0.0195   |
+
+
+<div align="center">
+	<a href="">
+	<img height = "250em" src = "./results/roc_curve.png" />
+    </a>
+</div>
+<h4 align="center">Figure 1 - ROC Curve comparison graph.</h4>
+
+
+## Non-SuperVised Models:
+
+| Método                  |       Jaccard       |   Silhueta (Avg)   |
+|:-----------------------:|:-------------------:|:-------------------:|
+| **K-Means** (n=2)           | 0.2951239424104527  | 0.5853294620160377  |
+| **Complete Link** (n=2)     | 0.31986874200238724 | 0.48111038632360703 |
+
+
+<div align="center">
+	<a href="">
+	<img height = "250em" src = "./results/silhuette_kmean.png" />
+    </a>
+</div>
+<h4 align="center">Figure 2 - Silhuette for K-means.</h4>
+
+<div align="center">
+	<a href="">
+	<img height = "250em" src = "https://github.com/FernandoSchett/github_readme_template/assets/80331486/4e4d24ee-efce-41d9-873b-3ececaf1cdd5" />
+    </a>
+</div>
+<h4 align="center">Figure 3 - Silhuette for Complete Link.</h4>
+
 ## Dependencies 🚚:
 
 The project dependencies are described in  ```./dependencies/requirements.``` within the repository.
